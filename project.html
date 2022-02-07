@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="project.html" class="list-active" style="font-weight:bold">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="contact.html"> Contact Me </a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1 style="color:white; text-align: center;
+            margin-bottom: 20px;">Create Post Blog</h1>
+            <div>
+              <label for="input-blog-title" style="color:white; margin-bottom: 20px;">Add My Project</label>
+              <input id="input-blog-title" />
+            </div>
+
+            <div style="color:white; display: flex; margin-bottom: 20px;">
+                <div>
+                    <label for="input-start-date">Start Date </label><br>
+                    <input type="date" id="input-start-date">
+                </div>
+                <div style="margin-left: 50px;">
+                    <label for="input-end-date">End Date</label><br>
+                    <input type="date" id="input-end-date">
+                </div>
+            </div>
+
+            <div style="color:white; margin-bottom: 10px;">
+              <label for="input-blog-content">Content</label>
+              <textarea id="input-blog-content" style="font-size: 12px; height: 150px;"></textarea>
+            </div>
+
+            <div>
+                <label style="color:white;" for="input-technologies">Technologies</label><br>
+                <label style="color:white;">
+                    <input type="checkbox" id="nodjs" value="nodjs">Node Js
+                    <input type="checkbox" id="reactjs" value="reactjs">React Js
+                    <p style="margin-bottom: 10px;"></p>                                
+                    <input type="checkbox" id="typescript" value="typescript">TypeScript
+                    <input type="checkbox" id="nextjs" value="nextjs" >Next Js
+                </label>                        
+            </div>
+
+            <div>
+              <label style="color:white">Upload Image</label>
+              <div class="input-blog-image-group" 
+              style="width: 480px;
+              font-size: 12px;
+              padding: 8px;
+              margin-top: 5px;
+              margin-bottom: 20px;
+              background: white;
+              color: black;
+              border: 1px solid #c4c4c4;
+              border-radius: 8px;">
+                <label for="input-blog-image">
+                  <p>Attach File</p>
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="line" />
+      <h1 style="text-align: center; color: white; margin-bottom: 100px;">MY PROJECTS</h1>
+      <div id="contents" class="blog-list">
+
+        <div class="blog-list-item" style="background-color: white; color: black; border: 2px solid rgb(7, 7, 49); flex-direction: row; flex-wrap: wrap;">
+          <div class="blog-image" style="margin-bottom: 10px;">
+            <img src="assets/blog-img.png" alt="" style="height: 200px;width: 200px;">
+          </div> 
+          <div class="blog-content">
+          <div>
+            <a href="project-detail.html"><h3>Dumbways Mobile App - 2021</h3></a>                        
+          </div>
+
+          <div style="margin-bottom: 10px;">
+            <p>3 days ago</p>
+          </div>
+
+          <p style="margin-bottom: 10px;">
+            Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+            menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+            ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+            meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Quam, molestiae
+            numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+            eligendi debitis?
+          </p>
+
+          <div class="apps" style="margin-bottom: 15px;">
+            <img src="assets/node-js.png" alt="nodjs" style="width: 30px">
+            <img src="assets/reactjs.png" alt="reactjs" style="width: 30px">
+            <img src="assets/typescript.png" alt="typescript" style="width: 30px">
+            <img src="" alt="nextjs" style="width: 30px">                        
+          </div>
+
+          
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="project.js"></script>
+  </body>
+</html>

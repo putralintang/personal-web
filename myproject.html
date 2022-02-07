@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>My Project</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <img src="assets/logo.png" alt="logo">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="myproject.html" style="font-weight:bold">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+        
+        <div class="project">
+            <div class="project-form">
+                <div class="form-container">
+                    <form onsubmit="addProject(event)">
+                        <div>
+                            <h1 style="color:white; text-align: center;
+                            margin-bottom: 20px;">Add My Project</h1>
+                        </div>
+
+                        <div style="color:white; margin-bottom: 20px;">
+                            <label for="input-project-name">Project Name</label><br>
+                            <input id="input-project-name" style="width: 500px;">
+                        </div>
+
+                        <div style="color:white; display: flex; margin-bottom: 20px;">
+                            <div>
+                                <label for="input-start-date">Start Date </label><br>
+                                <input type="date" id="input-start-date">
+                            </div>
+                            <div style="margin-left: 50px;">
+                                <label for="input-end-date">End Date</label><br>
+                                <input type="date" id="input-end-date">
+                            </div>
+                        </div>
+
+                        <div style="color:white; margin-bottom: 10px;">
+                            <label for="input-description">Description</label><br>
+                            <textarea id="input-description" style="font-size: 12px; height: 150px;"></textarea>
+                        </div>
+
+                        <div>
+                            <label style="color:white;" for="input-technologies">Technologies</label><br>
+                            <label style="color:white;">
+                                <input type="checkbox" id="nodjs" value="nodjs">Node Js
+                                <input type="checkbox" id="reactjs" value="reactjs">React Js
+                                <p style="margin-bottom: 10px;"></p>                                
+                                <input type="checkbox" id="typescript" value="typescript">TypeScript
+                                <input type="checkbox" id="nextjs" value="nextjs" >Next Js
+                            </label>                        
+                        </div>
+
+                        <div style="color: white">
+                            <br>
+                            <label>Upload Image</label>
+                            <div class="project-image-group" 
+                            style="width: 480px;
+                            font-size: 12px;
+                            padding: 8px;
+                            margin-top: 5px;
+                            margin-bottom: 20px;
+                            background: white;
+                            color: black;
+                            border: 1px solid #c4c4c4;
+                            border-radius: 8px;">
+                                <label for="input-project-image">
+                                    <p>Attach File</p>
+                                </label>
+                                <input type="file" id="input-project-image" hidden>
+                            </div>
+                        </div>
+                        <div class="button-group" style="text-align: right;" >
+                            <button>Post Project</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects" style="color: white;">
+            <h1 style="text-align: center; color: white; margin-bottom: 100px;">MY PROJECTS</h1>
+
+            <div id="contents" class="project-list" 
+            style="background-color: white; color: black; border: 2px solid rgb(7, 7, 49); width: 300px; flex-direction: row; align-items: left; display: flex; flex-wrap: wrap;">                
+                <div class="project-list-item">
+                    <div class="project-image" style="margin-bottom: 10px;">
+                        <img src="assets/blog-img.png" alt="gambar" style="width: 300px;">
+                    </div>
+                    
+                    <div>
+                        <a href="project-detail.html"><h3>Dumbways Mobile App - 2021</h3></a>                        
+                    </div>
+
+                    <div style="margin-bottom: 10px;">
+                        <p>Duration: 3 Days ago</p>
+                    </div>
+
+                    <div>
+                        <p>Lorem ipsum,
+                            dolor sit amet consectetur adipisicing elit. Quam, molestiae
+                            numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+                            eligendi debitis?
+                        </p><br>
+                    </div>
+
+                    <div class="apps" style="margin-bottom: 15px;">
+                        <img src="assets/node-js.png" alt="nodjs" style="width: 30px">
+                        <img src="assets/reactjs.png" alt="reactjs" style="width: 30px">
+                        <img src="assets/typescript.png" alt="typescript" style="width: 30px">
+                        <img src="" alt="nextjs" style="width: 30px">                        
+                    </div>
+
+                    <div class="project-content">
+                        <div class="btn-group">
+                            <button class="btn-edit" style="background-color: gray;">Edit Project</button>
+                            <button class="btn-post" style="background-color: gray;">Post Project</button>
+                        </div>
+                        <h1>
+                            <a href="project-detail.html" target="_blank">
+                        </h1>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="proyek.js"></script>
+    </body>
+</html>

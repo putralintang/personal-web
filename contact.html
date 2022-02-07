@@ -1,0 +1,139 @@
+<HTML>
+    <head>
+        <title>Putra Lintangasto's Personal Website - Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <img src="logo.png" alt="logo">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <!-- <a href="#">Blog</a> -->
+                        <a href="myproject.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="contact.html" style="font-weight: bold;">Contact Me</a>
+            </div>
+        </nav>
+
+        <form style=
+        "
+            width: 400px; 
+            margin: 50px auto; 
+        ">
+            <div style="font-size: 18; font-weight: bold; text-align: center; height: 50px; color: white">
+                <label for="title">Silahkan Mengisi Formnya</label>
+            </div>
+
+            <div>
+                <label style="font-size: 18; font-weight: bold; color: white" for="input-name">Name</label>
+                <input 
+                id="input-name" 
+                type="text" 
+                placeholder="Input Name" 
+                style=
+                "
+                width: 100%; 
+                border: 25px;
+                border-radius: 5px;
+                padding: 5px;
+                ">
+                
+            </div>
+            <br>
+            <div>
+                <label style="font-size: 18; font-weight: bold; color: white" for="input-email">Email</label>
+                <input 
+                id="input-email" 
+                type="email" 
+                placeholder="Input Email"
+                style=
+                "
+                width: 100%; 
+                border: 25px;
+                border-radius: 5px;
+                padding: 5px;
+                "
+                >
+                
+            </div>
+            <br>
+            <div>
+                <label style="font-size: 18; font-weight: bold; color: white" for="input-number">Phone Number</label>
+                <input id="input-number" 
+                type="number" 
+                placeholder="Input Phone Number"
+                style=
+                "
+                width: 100%; 
+                border: 25px;
+                border-radius: 5px;
+                padding: 5px;
+                "
+                >
+                
+            </div>
+            <br>
+            <div>
+                <label style=
+                    "
+                    font-size: 18; 
+                    font-weight: bold; color: white
+                    " 
+                    for="input-subject">
+                    Subject
+                </label>
+                <br>
+                <select 
+                id="input-subject"
+                style=
+                "
+                width: 100%;
+                border: 1px;
+                border-radius: 5px;
+                padding: 5px;
+                "
+                >
+                    <option value="">--Select One--</option>
+                    <option>Privacy Policy</option>
+                    <option>Problem with our Site</option>
+                    <option>Questions on Order</option>
+                    <option>Other Questions</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label style=
+                    "
+                    font-size: 18; 
+                    font-weight: bold; color: white
+                    " 
+                    for="input-message">
+                    Your Message
+                </label>
+                <br>
+                <textarea
+                id="input-message" 
+                cols="40" 
+                rows="8" 
+                maxlength="100"
+                style="border-radius: 5px; width: 100%;"
+                >
+                </textarea>
+                <br>
+            </div>
+            <br>
+            <div style="text-align:right">
+                <button style="border-radius: 10px; background-color: orangered; color: white; cursor: pointer; width: 80px;" type="button" onclick="SubmitData()">Submit</button>
+            </div>
+        </form>
+
+    </body>
+</HTML>
